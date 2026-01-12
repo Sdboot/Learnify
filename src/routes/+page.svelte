@@ -28,6 +28,12 @@
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-blend-mode: overlay;
+		image-rendering: high-quality;
+		image-rendering: -webkit-optimize-contrast;
+		background-clip: border-box;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 </style>
 
