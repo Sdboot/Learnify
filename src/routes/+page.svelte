@@ -8,11 +8,11 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
+	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">
 		<!-- Background Image with Blur -->
 		<div 
-			class="absolute inset-0 bg-cover bg-center blur-sm"
-			style="background-image: url('/child-2.jpg');"
+			class="absolute inset-0 bg-cover bg-center blur-lg"
+			style="background-image: url('/child-2.jpg'); background-attachment: fixed;"
 		></div>
 		
 		<!-- Overlay Gradient -->
