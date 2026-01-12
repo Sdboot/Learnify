@@ -8,16 +8,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">
-		<!-- Background Image with Blur -->
-		<div 
-			class="absolute inset-0 bg-cover bg-center blur-lg"
-			style="background-image: url('/child-2.jpg'); background-attachment: fixed;"
-		></div>
-		
-		<!-- Overlay Gradient -->
-		<div class="absolute inset-0 bg-gradient-to-r from-indigo-500/95 via-purple-500/95 to-pink-500/95 dark:from-indigo-900/95 dark:via-purple-900/95 dark:to-pink-900/95"></div>
-		
+	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen" style="background: linear-gradient(to right, rgba(99, 102, 241, 0.95), rgba(147, 51, 234, 0.95), rgba(236, 72, 153, 0.95)), url('/child-2.jpg') center/cover no-repeat fixed;">
 		<!-- Content -->
 		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
