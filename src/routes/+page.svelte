@@ -19,7 +19,7 @@
 			<p class="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 text-gray-100 max-w-2xl mx-auto px-2 leading-relaxed">
 				Discover a magical world of books for kids. Explore, search, and find your next favorite adventure!
 			</p>
-			<div class="flex gap-2 sm:gap-4 justify-center flex-col sm:flex-row px-2">
+			<div class="flex gap-2 sm:gap-4 justify-center flex-row px-2">
 				<a
 					href="/browse"
 					class="px-6 sm:px-8 py-2 sm:py-3 bg-white text-indigo-600 rounded-lg font-bold hover:bg-gray-100 transition transform hover:scale-105 text-sm sm:text-base"
