@@ -8,7 +8,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 text-white py-20 sm:py-16 md:py-24 lg:py-32">
+	<section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 text-white py-32 sm:py-16 md:py-24 lg:py-32">
 		<div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
 				<Sparkles size={32} class="sm:w-12 sm:h-12" />
