@@ -58,12 +58,7 @@
 	</div>
 
 	<!-- Mobile Filter Toggle -->
-	<button
-		on:click={() => (showFilters = !showFilters)}
-		class="hidden py-2 px-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg font-semibold text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-	>
-		{showFilters ? 'Hide Filters' : 'Show Filters'}
-	</button>
+	<!-- Removed toggle button - filters now show side by side on all views -->
 
 	<!-- Filter Panel -->
 	<div
