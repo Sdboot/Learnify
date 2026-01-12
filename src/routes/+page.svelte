@@ -8,7 +8,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen" style="background: url('/child-2.jpg') center/cover no-repeat fixed;">
+	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen" style="background: url('/adventure.jpg center/cover fixed);">
 		<!-- Content -->
 		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
