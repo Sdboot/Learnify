@@ -47,7 +47,7 @@
 					Discover why reading is the greatest adventure for young minds
 				</p>
 			</div>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+			<div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 				<div class="bg-white dark:bg-gray-700 p-5 sm:p-6 md:p-8 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300">
 					<div class="text-4xl sm:text-5xl mb-3 sm:mb-4 text-indigo-600">📖</div>
 					<h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900 dark:text-white">Expand Your Imagination</h3>
