@@ -3,6 +3,7 @@
 	import { browser } from '$app/environment';
 	import type { Book } from '$lib/data/books';
 	import { Heart } from 'lucide-svelte';
+	import BookReader from './BookReader.svelte';
 
 	export let book: Book;
 
@@ -87,11 +88,15 @@
 			{book.description}
 		</p>
 
-		<a
-			href="/book/{book.id}"
-			class="block w-full text-center py-2 px-3 bg-indigo-600 text-white rounded font-semibold hover:bg-indigo-700 transition text-sm"
-		>
-			View Details
-		</a>
+		<div class="space-y-2">
+			<a
+				href="/book/{book.id}"
+				class="block w-full text-center py-2 px-3 bg-indigo-600 text-white rounded font-semibold hover:bg-indigo-700 transition text-sm"
+			>
+				View Details
+			</a>
+			
+			<BookReader {book} />
+		</div>
 	</div>
 </div>

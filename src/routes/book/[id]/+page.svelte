@@ -4,6 +4,7 @@
 	import { favorites } from '$lib/stores/favorites';
 	import { page } from '$app/stores';
 	import { Heart } from 'lucide-svelte';
+	import BookReader from '$lib/components/BookReader.svelte';
 
 	let book = dummyBooks.find((b) => b.id === $page.params.id);
 
@@ -69,6 +70,11 @@
 							<Heart size={20} fill={isFavorite ? 'currentColor' : 'none'} />
 							{isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
 						</button>
+
+						<!-- Book Reader -->
+						<div class="mt-6">
+							<BookReader {book} />
+						</div>
 					</div>
 				</div>
 
