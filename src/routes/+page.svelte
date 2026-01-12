@@ -8,7 +8,7 @@
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 text-white py-32 sm:py-16 md:py-24 lg:py-32">
+	<section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-900 dark:via-purple-900 dark:to-pink-900 text-white py-52 sm:py-16 md:py-24 lg:py-32">
 		<div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
 				<Sparkles size={32} class="sm:w-12 sm:h-12" />
@@ -138,5 +138,64 @@
 			</a>
 		</div>
 	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-900 text-gray-300 py-12 sm:py-16 md:py-20">
+		<div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 mb-8">
+				<!-- About -->
+				<div>
+					<h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">About Learnify</h3>
+					<p class="text-sm sm:text-base leading-relaxed text-gray-400">
+						Learnify is a magical library designed to inspire young readers and foster a love of books.
+					</p>
+				</div>
+
+				<!-- Quick Links -->
+				<div>
+					<h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Quick Links</h3>
+					<ul class="space-y-2 sm:space-y-3">
+						<li><a href="/" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Home</a></li>
+						<li><a href="/browse" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Browse Books</a></li>
+						<li><a href="/favorites" class="text-sm sm:text-base text-gray-400 hover:text-white transition">My Favorites</a></li>
+					</ul>
+				</div>
+
+				<!-- Support -->
+				<div>
+					<h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Support</h3>
+					<ul class="space-y-2 sm:space-y-3">
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Help Center</a></li>
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Contact Us</a></li>
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">FAQ</a></li>
+					</ul>
+				</div>
+
+				<!-- Connect -->
+				<div>
+					<h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Connect</h3>
+					<ul class="space-y-2 sm:space-y-3">
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Twitter</a></li>
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Facebook</a></li>
+						<li><a href="#" class="text-sm sm:text-base text-gray-400 hover:text-white transition">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Divider -->
+			<div class="border-t border-gray-700 my-6 sm:my-8"></div>
+
+			<!-- Bottom Footer -->
+			<div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+				<p class="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
+					&copy; 2026 Learnify. All rights reserved.
+				</p>
+				<div class="flex gap-4 sm:gap-6">
+					<a href="#" class="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition">Privacy Policy</a>
+					<a href="#" class="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition">Terms of Service</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
 
