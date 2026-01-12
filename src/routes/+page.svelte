@@ -22,7 +22,7 @@
 
 <style>
 	.hero-section {
-		background-image: url('/child-2.jpg');
+		background-image: url('/child-1.jpg');
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
