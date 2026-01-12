@@ -6,10 +6,21 @@
 	const featuredBooks = dummyBooks.slice(0, 6);
 </script>
 
+<style>
+	.hero-section {
+		background-image: url('/child-2.jpg');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-color: rgba(99, 102, 241, 0.7);
+		background-blend-mode: overlay;
+	}
+</style>
+
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen" style="background: url('/adventure.jpg center/cover fixed);">
-		<!-- Content -->
+	<section class="hero-section relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">		<!-- Content -->
 		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
 				<Sparkles size={32} class="sm:w-12 sm:h-12" />
