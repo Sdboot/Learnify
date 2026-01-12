@@ -21,8 +21,6 @@
 		minRating: 0
 	};
 
-	let showFilters = false;
-
 	const categories = [...new Set(books.map((b) => b.category))].sort();
 	const subjects = [...new Set(books.map((b) => b.subject))].sort();
 	const levels = ['beginner', 'intermediate', 'advanced'];
@@ -62,16 +60,14 @@
 	<!-- Mobile Filter Toggle -->
 	<button
 		on:click={() => (showFilters = !showFilters)}
-		class="md:hidden w-full py-2 px-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg font-semibold text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+		class="hidden py-2 px-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg font-semibold text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition"
 	>
 		{showFilters ? 'Hide Filters' : 'Show Filters'}
 	</button>
 
 	<!-- Filter Panel -->
 	<div
-		class={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 ${
-			showFilters ? 'block' : 'hidden md:grid'
-		}`}
+		class={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3`}
 	>
 		<!-- Category Filter -->
 		<select
