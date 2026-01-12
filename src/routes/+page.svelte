@@ -2,8 +2,22 @@
 	import { dummyBooks, categories } from '$lib/data/books';
 	import BookCard from '$lib/components/BookCard.svelte';
 	import { Sparkles, BookOpen, Heart, Zap } from 'lucide-svelte';
+	import { onMount } from 'svelte';
 
 	const featuredBooks = dummyBooks.slice(0, 6);
+
+	const colors = ['#fbbf24', '#ec4899', '#8b5cf6', '#3b82f6', '#10b981', '#f97316', '#ef4444'];
+	let currentColorIndex = 0;
+	let sparkleColor = colors[0];
+
+	onMount(() => {
+		const interval = setInterval(() => {
+			currentColorIndex = (currentColorIndex + 1) % colors.length;
+			sparkleColor = colors[currentColorIndex];
+		}, 500);
+
+		return () => clearInterval(interval);
+	});
 </script>
 
 <style>
@@ -22,7 +36,7 @@
 	<section class="hero-section relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">		<!-- Content -->
 		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
-				<Sparkles size={32} class="sm:w-12 sm:h-12" />
+				<Sparkles size={32} class="sm:w-12 sm:h-12" style="color: {sparkleColor};" />
 			</div>
 			<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight pt-16 sm:pt-10 md:pt-12">
 				Welcome to <span class="bg-white text-transparent bg-clip-text">Learnify</span>
