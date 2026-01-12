@@ -13,7 +13,6 @@
 		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
-		background-color: rgba(99, 102, 241, 0.7);
 		background-blend-mode: overlay;
 	}
 </style>
