@@ -47,7 +47,7 @@
 			<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight pt-16 sm:pt-10 md:pt-12">
 				Welcome to <span class="bg-white text-transparent bg-clip-text">Learnify</span>
 			</h1>
-			<p class="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 text-gray-100 max-w-2xl mx-auto px-2 leading-relaxed pt-8 sm:pt-5 md:pt-6">
+			<p class="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 text-black max-w-2xl mx-auto px-2 leading-relaxed pt-8 sm:pt-5 md:pt-6">
 				Discover a magical world of books for kids. Explore, search, and find your next favorite adventure!
 			</p>
 			<div class="flex gap-2 sm:gap-4 justify-center flex-row px-2">
