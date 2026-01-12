@@ -4,6 +4,7 @@
 	import type { Book } from '$lib/data/books';
 	import { Heart } from 'lucide-svelte';
 	import BookReader from './BookReader.svelte';
+	import { cardReveal } from '$lib/actions/cardReveal';
 
 	export let book: Book;
 
@@ -30,7 +31,7 @@
 	};
 </script>
 
-<div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
+<div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition transform hover:-translate-y-1" use:cardReveal>
 	<div class="relative h-64 overflow-hidden bg-gray-200 dark:bg-gray-700">
 		<img
 			src={book.coverUrl}
