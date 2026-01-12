@@ -42,20 +42,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 	};
 </script>
 
-<div>
+<div class="flex gap-2 w-full">
 	<button
 		on:click={openReader}
-		class="w-full px-4 py-2 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition mb-2"
+		class="flex-1 px-3 py-2 bg-indigo-600 text-white rounded-lg font-semibold hover:bg-indigo-700 transition text-xs sm:text-sm"
 	>
-		📖 Read Online
+		📖 Read
 	</button>
 
 	<button
 		on:click={downloadBook}
-		class="w-full px-4 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition flex items-center justify-center gap-2"
+		class="flex-1 px-3 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition flex items-center justify-center gap-1"
 	>
-		<Download size={18} />
-		Download Book
+		<Download size={16} />
+		<span class="hidden sm:inline">Download</span>
 	</button>
 
 	<!-- Online Reader Modal -->

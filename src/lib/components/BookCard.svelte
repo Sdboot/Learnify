@@ -88,15 +88,17 @@
 			{book.description}
 		</p>
 
-		<div class="space-y-2">
+		<div class="flex flex-col gap-2">
 			<a
 				href="/book/{book.id}"
-				class="block w-full text-center py-2 px-3 bg-indigo-600 text-white rounded font-semibold hover:bg-indigo-700 transition text-sm"
+				class="flex-1 text-center py-2 px-3 bg-indigo-600 text-white rounded font-semibold hover:bg-indigo-700 transition text-sm"
 			>
 				View Details
 			</a>
 			
-			<BookReader {book} />
+			<div class="flex gap-2">
+				<BookReader {book} />
+			</div>
 		</div>
 	</div>
 </div>
