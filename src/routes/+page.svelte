@@ -22,19 +22,40 @@
 
 <style>
 	.hero-section {
-		background-image: url('/child-2.jpg');
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-blend-mode: overlay;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 0;
+	}
+
+	.hero-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 1;
 	}
 </style>
 
 <div class="min-h-screen bg-white dark:bg-gray-900">
 	<!-- Hero Section -->
-	<section class="hero-section relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">		<!-- Content -->
-		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
+	<section class="hero-section relative text-white py-20 sm:py-16 md:py-24 lg:py-32 overflow-hidden min-h-screen">
+		<video class="hero-video" autoplay muted loop playsinline>
+			<source src="/Childre vid 1.mp4" type="video/mp4" />
+		</video>
+		<div class="hero-overlay"></div>
+		<!-- Content -->
+		<div class="relative max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center z-10">
 			<div class="flex justify-center mb-3 sm:mb-4 animate-bounce">
 				<Sparkles size={32} class="sm:w-12 sm:h-12" style="color: {sparkleColor};" />
 			</div>
